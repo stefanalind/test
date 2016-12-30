@@ -30,12 +30,14 @@ namespace Test
 
 
 
-        public class ProductId
+        public class Product
         {
-            public int id;
-            public string name;
+            private string _artikelNr;
+            private string _name;
+            public string artikelNr { get; set; }
+            public string name { get; set; }
 
-            public ProductId()
+            public Product()
             {
                 id = 1;
                 name = "test";
@@ -73,7 +75,7 @@ namespace Test
             foreach (int item in ilist)
             {
             }
-            ProductId prodId = new ProductId();
+            Product prodId = new Product();
             object obj = prodId.GetType();
         }
 
